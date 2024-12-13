@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+:root{
+    --DARK-CYAN: hsl(185, 75%, 39%);
+    --VERY-DARK-DESATURATED-BLUE: hsl(229, 23%, 23%);
+    --DARK-GRAYISH-BLUE: hsl(227, 10%, 46%);
+}
+body{
+    height: 100vh;
+    display: flex;
+    font-family: "Kumbh Sans", sans-serif;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../img/bg-pattern-top.svg),url(../img/bg-pattern-bottom.svg);
+    background-color: var(--DARK-CYAN);
+    padding: 0rem 1.6rem 0rem 1.6rem;
+}
+p{
+    font-size: 1.8rem;
+    color: var(--DARK-GRAYISH-BLUE);
+}
+.section{
+    height: 43.5rem;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+.img{
+    width: 100%;
+    background-color: var(--DARK-CYAN);
+    height: 15rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-image: url(../img/bg-pattern-card.svg);
+    position: relative;
+    margin-bottom: 6rem;
+}
+img{
+    position: absolute;
+    bottom: -25%;
+    right: 50%;
+    transform: translate(50%,5%);
+    border-radius: 50%;
+    border: 4px solid white;
+}
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--VERY-DARK-DESATURATED-BLUE);
+    margin-bottom: 1rem;
+}
+span{
+    font-size: 2.15rem;
+    color: var(--DARK-GRAYISH-BLUE);
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--VERY-DARK-DESATURATED-BLUE);
+}
+.article-1{
+    margin: 4rem 3rem 0rem 3rem;
+}
+.article-2{
+    margin: 0.8rem 3rem 0rem 3rem;
+}
+.bold{
+    display: inline-block;
+    width: 33.3%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--VERY-DARK-DESATURATED-BLUE);
+    text-align: center;
+}
+.text{
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+}
+@media (min-width: 600px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        min-width: 60rem;
+        max-width: 70rem;
+        min-height: 45rem;
+        max-height: 70rem;
+    }
+}
+@media (min-width: 1024px) {
+    .section{
+        min-width: 36rem;
+        max-width: 38rem;
+        min-height: 42rem;
+        max-height: 43rem;
+    }
+}
